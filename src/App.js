@@ -96,10 +96,3 @@ const SubmitButtonn = (props) => {
 
 
 export default App;
-
-// sheqmeni buttsgroup komponenti                                        +
-// daa returne buttons.map funqcia, imisatvis rom gqondes gamosaxuleba   +
-// buttonesbis klikze stateshi shecvale aqtiuri buttons indexi  ternarulebit  +
-// buttons daade shesabamisi stili, active/non-active +
-
-// let item = buttons.map((button,index) => <button key={button}>{button}</button>);
