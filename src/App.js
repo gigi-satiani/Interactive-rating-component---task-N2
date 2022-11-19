@@ -4,6 +4,7 @@ import star from "./images/star.svg";
 import thankYou from "./images/thank-you.svg";
 
 function App() {
+  
   const [activeButtonIndex, setActiveButtonIndex] = useState(-1);
   function buttonClick(clicker) {
     setActiveButtonIndex(clicker);
@@ -58,6 +59,7 @@ function App() {
   );
 }
 
+
 const Htwo = () => {
   return <h3>How did we do?</h3>;
 };
@@ -77,8 +79,7 @@ const Buttonsgroup = (props) => {
     <button
       key={button}
       onClick={() => props.buttonClick(index)}
-      style={{ background: props.activeButtonIndex === index ? "gray" : "" }}
-    >
+      style={{ background: props.activeButtonIndex === index ? "gray" : "" }}>
       {button}
     </button>
   ));
@@ -93,12 +94,6 @@ const SubmitButtonn = (props) => {
   );
 };
 
-const myStyle = {
-  display: "none",
-};
-const antiStyle = {
-  display: "block",
-};
 
 export default App;
 
