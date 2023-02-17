@@ -4,7 +4,6 @@ import star from "./images/star.svg";
 import thankYou from "./images/thank-you.svg";
 
 function App() {
-  
   const [activeButtonIndex, setActiveButtonIndex] = useState(-1);
   function buttonClick(clicker) {
     setActiveButtonIndex(clicker);
@@ -40,7 +39,7 @@ function App() {
         <div className="afterSubmitCard">
           <div className="cardBody1">
             <figure className="thanksParent">
-              <img src={thankYou} className="thankYou"></img>
+              <img alt="" src={thankYou} className="thankYou"></img>
             </figure>
             <div className="selectedNumber">
               <span>you selected {activeButtonIndex + 1} out of 5</span>
@@ -58,7 +57,6 @@ function App() {
     </div>
   );
 }
-
 
 const Htwo = () => {
   return <h3>How did we do?</h3>;
@@ -79,7 +77,8 @@ const Buttonsgroup = (props) => {
     <button
       key={button}
       onClick={() => props.buttonClick(index)}
-      style={{ background: props.activeButtonIndex === index ? "gray" : "" }}>
+      style={{ background: props.activeButtonIndex === index ? "gray" : "" }}
+    >
       {button}
     </button>
   ));
@@ -93,6 +92,5 @@ const SubmitButtonn = (props) => {
     </button>
   );
 };
-
 
 export default App;

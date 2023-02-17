@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica;
 }
 .App {
   width: 100%;
@@ -13,8 +14,8 @@
 }
 .cardBody {
   background-color: hsl(213, 19%, 18%);
-  width: 390px;
-  height: 400px;
+  width: 410px;
+  height: 410px;
   border-radius: 30px;
   padding: 30px;
 }
@@ -37,7 +38,7 @@
 }
 .cardTexts p {
   font-size: 15px;
-  color: #969FAD;
+  color: #969fad;
   line-height: 1.4;
   padding-top: 10px;
 }
@@ -51,12 +52,12 @@
   width: 50px;
   height: 50px;
   background-color: #384453;
-  color: #969FAD;
+  color: #969fad;
   border: none;
   cursor: pointer;
 }
 .buttonParent button:hover {
-  color:hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   background-color: hsl(25, 97%, 53%);
 }
 .submitParent button {
@@ -73,7 +74,7 @@
   cursor: pointer;
 }
 .submitParent button:hover {
-  color:hsl(25, 97%, 53%);
+  color: hsl(25, 97%, 53%);
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -121,5 +122,5 @@
 .thanksText p {
   padding-top: 20px;
   font-size: 15px;
-  color: #969FAD;
+  color: #969fad;
 }
